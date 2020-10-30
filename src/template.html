@@ -70,7 +70,7 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                Hello. My name is William Burr, but you can simply call me Will. I started my journey learning to code about two years ago. Few people actually find something they are passionate about but luckily I found my passion, where learning new concepts is not a daunting task but a fulfilling endless cycle of "ah-ha!" moments. I am confident in my ability to learn new technology then quickly and efficiently, apply it to a project. 
+                Hello. My name is William Burr, but you can simply call me Will. I started my journey learning to code about two years ago. Few people actually find something they are passionate about but luckily I found my passion, where learning new concepts is not a daunting task but a fulfilling endless cycle of "ah-ha!" moments. I am confident in my ability to learn new technology, then quickly and efficiently apply it to a project. 
               </p>
               <p class="about-wrapper__info-text">
                 My career in the Army has taught me the importance of working with a team. Each member of the team brings valuable skills that drive success to the over all goal. I am currently on the look out for web developer roles where I can use my skills to develop beautiful, customer engaging user interfaces.
@@ -237,8 +237,11 @@
       let height = window.screen.height;
       let width = window.screen.width;
 
+      let heroTitle = document.querySelector('.hero-title');
+
       if (width < 800) {
-        lottie.style.display = "block";
+        lottie.style.display = "none";
+        // heroTitle.style.fontSize = "27px";
       }
     </script>
   </body>
