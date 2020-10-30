@@ -3,6 +3,22 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
+}
+
+lottie-player {
+  float: right;
+  position: absolute;
+  top: 39%;
+  right: 7%;
+}
+
+
+// Media Queries
+@media (max-width: 760px) {
+  lottie-player {
+      display: none;
+  }
+ 
 }

@@ -43,6 +43,8 @@
         <p class="hero-cta" class="load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
         </p>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_Vx3h9L.json"  background="transparent"  speed="1"  style="width: 600px; height: 600px;"  loop  autoplay></lottie-player>
       </div>
     </div>
     <!-- /END Hero Section -->
@@ -229,5 +231,15 @@
       </div>
     </footer>
     <!-- /END Footer Section -->
+    <script>
+      // Remove animation if on cellphone
+      let lottie = document.querySelector('lottie-player');
+      let height = window.screen.height;
+      let width = window.screen.width;
+
+      if (width < 800) {
+        lottie.style.display = "block";
+      }
+    </script>
   </body>
 </html>
